@@ -21609,7 +21609,7 @@ module.exports = Array.isArray || function (arr) {
   :root {
     --sponge-header-bg: #3A3A3A;
     --sponge-header-text: #F8CE0F;
-    --sponge-icon: #fbe687;
+    --sponge-icon: #F8CE0F;
 
     --primary-text-color: #212121;
     --primary-background-color: #ffffff;
@@ -21689,12 +21689,8 @@ module.exports = Array.isArray || function (arr) {
   }
 
   #spongie {
-    width:50px;
-    height:50px;
-  }
-
-  .rightToolbar {
-    margin-right: 16px;
+    width:40px;
+    height:40px;
   }
 
   #mainToolbar paper-icon-button {
@@ -21703,20 +21699,30 @@ module.exports = Array.isArray || function (arr) {
 
   #mainToolbar paper-button {
     color: #000;
-    background-color: #dfbe58;
+    background-color: var(--sponge-icon);
+    font-size: 12px;
+    font-weight: 500;
+    padding: .4em 1em 0 .6em;
   }
 
   #mainToolbar .app-name {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
     /* Required for main area's paper-scroll-header-panel custom condensing transformation */
     -webkit-transform-origin: left center;
     transform-origin: left center;
   }
 
+  #mainToolbar {
+    --paper-toolbar-height: 64px;
+  }
+
+  #mainToolbar, #mainToolbar .top {
+    height: 54px;
+  }
   #mainToolbar .top {
     @apply(--layout-horizontal);
-    height: 64px;
+    @apply(--layout-center);
   }
 
   .pluginfilters {
