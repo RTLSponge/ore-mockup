@@ -170,7 +170,90 @@
     margin: 10px;
   }
 
+    .plugin-container {
+      @apply(--layout-horizontal);
+      @apply(--layout-wrap);
+      @apply(--layout-around-justified);
+    }
+    paper-card.plugin {
+       @apply(--layout-horizontal);
+       margin-bottom: 8px;
+       margin-left: 4px;
+       margin-right: 4px;
+       flex-grow: 1;
+       flex-basis: auto;
+     }
+
+    .plugin-image {
+      position: absolute;
+      width: 200px;
+      height: 100%;
+    }
+    .plugin-content {
+      margin-left: 200px;
+      @apply(--layout-flex);
+    }
+    .plugin-name {
+       font-family: 'Roboto', 'Noto', sans-serif;
+       -webkit-font-smoothing: antialiased;  /* OS X subpixel AA bleed bug */
+       text-rendering: optimizeLegibility;
+       font-size: 20px;
+       font-weight: 500;
+       line-height: 28px;
+     }
+    .plugin-sub {
+      @apply(--paper-font-subhead);
+      color: var(--paper-grey-600);
+      margin: 4px 0;
+    }
+
+    .plugin-description { /*Using fades instead of elipsis as elipsis are screwed in css and I didn't want to use javascript*/
+      position: relative;
+      height: 4.8em; /* exactly three lines */
+      overflow: hidden;
+      margin-bottom: -1.4em;
+    }
+    .plugin-description:after {
+      content: "";
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 1.2em;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, .2), rgba(255, 255, 255, 1) 50%);
+    }
+
   /* Breakpoints */
+
+  @media (max-width: 550px) {
+    .plugin-image {
+      display: none;
+    }
+    .plugin-content{
+      margin-left: 0px;
+    }
+  }
+
+    @media (min-width: 0px) {
+      paper-card.plugin {
+        width: 100%;
+      }
+    }
+
+  @media (min-width: 1000px) {
+    paper-card.plugin {
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    paper-card.plugin {
+      width: 32%;
+    }
+  }
+
+
 
     @media (max-width: 380px) {
       #mainToolbar .login {
