@@ -226,12 +226,22 @@
 
   /* Breakpoints */
 
-  @media (max-width: 550px) {
+  @media (max-width: 570px) {
+    paper-card.plugin {
+      @apply(--layout-vertical);
+    }
     .plugin-image {
-      display: none;
+      position: relative;
+      width: 100%;
+      height: 150px;
     }
     .plugin-content{
       margin-left: 0px;
+    }
+    paper-card.plugin{
+      --paper-card-actions:{
+        //TODO: Move actions up?
+      }
     }
   }
 
