@@ -21828,7 +21828,7 @@ module.exports = Array.isArray || function (arr) {
     .plugin-image {
       position: relative;
       width: 100%;
-      height: 150px;
+      height: 120px;
     }
     .plugin-content{
       margin-left: 0px;
@@ -21840,15 +21840,19 @@ module.exports = Array.isArray || function (arr) {
     }
   }
 
-    @media (min-width: 0px) {
-      paper-card.plugin {
-        width: 100%;
-      }
-    }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 940px) {
     paper-card.plugin {
       width: 45%;
+    }
+  }
+
+  @media (max-width: 1210px) and (min-width: 940px) {
+    .plugin-image {
+      width: 120px;
+    }
+    .plugin-content {
+      margin-left: 120px;
     }
   }
 
