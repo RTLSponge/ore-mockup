@@ -1,6 +1,6 @@
 ## Brief
 
-Experimental mockup using Polymer & Material Design for the plugin gallery for the SpongePowered Plugin Repository & Hosting Service: [Ore](https://github.com/SpongePowered/Ore/).
+Experimental mockup using Polymer & Material Design for the plugin gallery for the SpongePowered Plugin Repository & Hosting Service: [Ore](https://github.com/SpongePowered/Ore/). Made over a few hours each night for a week.
 
 ## Demo
 
