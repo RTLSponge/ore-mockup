@@ -1,5 +1,14 @@
-![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
-## Polymer Starter Kit
+##Brief
+
+Experimental mockup using Polymer & Material Design for the plugin gallery for the SpongePowered Plugin Repository & Hosting Service: [Ore](https://github.com/SpongePowered/Ore/).
+
+##Demo
+
+[View on Github Pages](https://RTLSponge.github.io/ore-mockup/)
+
+##Based on:
+
+### Polymer Starter Kit
 
 > A starting point for building web applications with Polymer 1.0
 
