@@ -1,12 +1,12 @@
-##Brief
+## Brief
 
 Experimental mockup using Polymer & Material Design for the plugin gallery for the SpongePowered Plugin Repository & Hosting Service: [Ore](https://github.com/SpongePowered/Ore/).
 
-##Demo
+## Demo
 
 [View on Github Pages](https://RTLSponge.github.io/ore-mockup/)
 
-##Based on:
+## Based on:
 
 ### Polymer Starter Kit
 
